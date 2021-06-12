@@ -1,0 +1,15 @@
+<script src="../media/vue.js"></script>
+<link rel="stylesheet" href="../media/default.css">
+<link rel="stylesheet" href="style.css">
+
+<div id="app">
+    <p class="title">Barra de progresso com VueJS</p>
+    <button @click="iniciarProgresso">Iniciar barra</button>
+    <button @click="pararProgresso">Parar barra</button>
+    <button @click="resetarProgresso">Reiniciar barra</button>
+    <div class="progressBar">
+        <div class="progress" :style="progress">{{ progresso > 0 ? progresso+'%' : '' }}</div>
+    </div>
+</div>
+
+<script src="index.js"></script>

@@ -1,0 +1,11 @@
+<script src="../media/vue.js"></script>
+<link rel="stylesheet" href="../media/default.css">
+<link rel="stylesheet" href="style.css">
+
+<div id="app">
+    <p class="title">Chamei esse exercício de Espelhagem</p>
+    <input type="text" v-model="inputValor">
+    <p><b>Resultado:</b> {{ inputValor == 'Digite alguma coisa aqui' || inputValor == '' ? 'Digite algo acima e veja a mágica' : inputValor }}</p>
+</div>
+
+<script src="index.js"></script>
